@@ -1,0 +1,262 @@
+:root {
+  --rojo: #c0392b;
+  --naranja: #e67e22;
+  --amarillo: #f1c40f;
+  --oscuro: #2c2c2c;
+  --claro: #ffffff;
+  --gris: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--gris);
+  color: var(--oscuro);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--rojo);
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, var(--rojo), var(--naranja));
+  color: var(--claro);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.logo img {
+  width: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--amarillo);
+}
+
+/* HERO */
+.hero {
+  background: url('https://th.bing.com/th/id/OIG3.weeZ8D5yME4Cz16H_lzQ?w=1024&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3') no-repeat center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--amarillo);
+  color: var(--oscuro);
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--naranja);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* MENÚ */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-card .content {
+  padding: 15px;
+}
+
+.menu-card h3 {
+  color: var(--rojo);
+}
+
+.menu-card span {
+  color: var(--naranja);
+  font-weight: 600;
+}
+
+/* PROMOS */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 900px;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  background: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* CONTACTO */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: var(--rojo);
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: var(--naranja);
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: var(--oscuro);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer .social a {
+  color: var(--amarillo);
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
