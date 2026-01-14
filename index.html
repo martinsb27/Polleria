@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Buen Pollo | Pollería</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container container">
+      <div class="logo">
+        <img src="https://th.bing.com/th/id/OIG2.p_u6RggkzDlzH2M6XwAA?pid=ImgGn" alt="Logo El Buen Pollo">
+        El Buen Pollo
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#promos">Promociones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1>El sabor que enamora en cada mordida</h1>
+      <p>Pollo a la brasa jugoso, crujiente y lleno de tradición</p>
+      <a href="#menu" class="btn">Ver Menú</a>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section id="menu">
+    <div class="container">
+      <h2>Nuestro Menú</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <img src="img/pollo1.jpg" alt="Pollo a la brasa">
+          <div class="content">
+            <h3>Pollo Entero</h3>
+            <p>Pollo a la brasa con papas y ensalada.</p>
+            <span>S/ 45.00</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://www.polleriaperuana.cl/wp-content/uploads/2023/07/medio-pollo-a-la-brasa-600x600.jpg" alt="Medio Pollo">
+          <div class="content">
+            <h3>Medio Pollo</h3>
+            <p>Perfecto para compartir.</p>
+            <span>S/ 25.00</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/alitas.jpg" alt="Alitas">
+          <div class="content">
+            <h3>Alitas BBQ</h3>
+            <p>Crujientes y jugosas.</p>
+            <span>S/ 18.00</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMOCIONES -->
+  <section id="promos">
+    <div class="container">
+      <h2>Promociones</h2>
+
+      <div class="carousel">
+        <div class="carousel-track">
+
+          <div class="carousel-item">
+            <h3>Promo Familiar</h3>
+            <p>Pollo entero + papas + gaseosa por S/ 50</p>
+          </div>
+
+          <div class="carousel-item">
+            <h3>Martes de Alitas</h3>
+            <p>2x1 todo el día</p>
+          </div>
+
+          <div class="carousel-item">
+            <h3>Combo Pareja</h3>
+            <p>Medio pollo + 2 bebidas por S/ 30</p>
+          </div>
+
+        </div>
+
+        <div class="carousel-buttons">
+          <button id="prev"><i class="fas fa-chevron-left"></i></button>
+          <button id="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="container">
+      <h2>Contáctanos</h2>
+
+      <div class="contact-grid">
+        <form>
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="Correo" required>
+          <textarea rows="5" placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <iframe src="https://www.google.com/maps?q=Lima,Peru&output=embed"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 El Buen Pollo - Todos los derechos reservados</p>
+    <p>Horario: Lunes a Domingo | 11:00 am - 10:00 pm</p>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
